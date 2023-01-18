@@ -1,8 +1,10 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import Footer from '../components/global/footer.tsx'
+import Header from '../components/global/header.tsx'
 
 export default function Document() {
   const meta = {
-    title: 'Next.js Blog Starter Kit',
+    title: 'Urocentrum',
     description: 'Clone and deploy your own Next.js portfolio in minutes.',
     image: 'https://assets.vercel.com/image/upload/q_auto/front/vercel/dps.png'
   }
@@ -23,8 +25,10 @@ export default function Document() {
         <meta name="twitter:image" content={meta.image} />
       </Head>
       <body>
+        <Header />
         <Main />
         <NextScript />
+        <Footer />
       </body>
     </Html>
   )
